@@ -17,6 +17,14 @@
       "payload": {}
     }
   },
+  "apiRequestCreateTemplate": {
+    "application/json" : {
+      "operation": "create",
+      "tableName": "heroes",
+      "payload":  "$input.json('$')"
+    }
+  },
+  "apiResponseCreateTemplate": "{\"id\":\"$input.path('$').id\"}",
   "apiResponseReadTemplate": "{\"id\": \"$input.path('$').Item.id\",  \"name\": \"$input.path('$').Item.name\"}",
   "apiResponseListTemplate": "{ \"data\": [#foreach($hero in $input.path('$').Items){\"id\": \"$hero.id\",  \"name\": \"$hero.name\"}#if($foreach.hasNext),#end #end ]}"
 }

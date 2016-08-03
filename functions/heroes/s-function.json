@@ -58,6 +58,27 @@
           }
         }
       }
+    },
+    {
+      "path": "hero",
+      "method": "POST",
+      "type": "AWS",
+      "authorizationType": "none",
+      "apiKeyRequired": false,
+      "requestParameters": {},
+      "requestTemplates": "$${apiRequestCreateTemplate}",
+      "responses": {
+        "400": {
+          "statusCode": "400"
+        },
+      "default": {
+          "statusCode": "200",
+          "responseParameters": {},
+          "responseModels": {},
+          "responseTemplates": {},
+          "application/json": ""
+        }
+      }
     }
   ],
   "events": [],
