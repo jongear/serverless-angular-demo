@@ -1,0 +1,22 @@
+{
+  "apiRequestReadTemplate": {
+    "application/json" : {
+      "operation": "read",
+      "tableName": "heroes",
+      "payload": {
+        "Key": {
+          "id": "$input.params('id')"
+        }
+      }
+    }
+  },
+  "apiRequestListTemplate": {
+    "application/json": {
+      "operation": "list",
+      "tableName": "heroes",
+      "payload": {}
+    }
+  },
+  "apiResponseReadTemplate": "{\"id\": \"$input.path('$').Item.id\",  \"name\": \"$input.path('$').Item.name\"}",
+  "apiResponseListTemplate": "{ \"data\": [#foreach($hero in $input.path('$').Items){\"id\": \"$hero.id\",  \"name\": \"$hero.name\"}#if($foreach.hasNext),#end #end ]}"
+}

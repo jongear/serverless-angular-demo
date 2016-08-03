@@ -1,0 +1,69 @@
+{
+  "name": "serverless-angular-demo",
+  "version": "0.2.1",
+  "description": "Angular 2 Tour of Heroes Meets Serverless",
+  "scripts": {
+    "postinstall": "typings install",
+    "server:dev": "webpack-dev-server --config client/config/webpack.dev.js --inline --progress --display-cached --display-error-details --watch --open",
+    "start": "npm run server:dev",
+    "build": "rimraf dist && webpack --config client/config/webpack.prod.js --progress --profile --bail",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Jon Gear"
+  },
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jongear/serverless-angular-demo.git"
+  },
+  "dependencies": {
+    "serverless-optimizer-plugin": "^2.0.0",
+    "serverless-client-s3": "^2.0.0",
+    "@angular/common": "2.0.0-rc.1",
+    "@angular/compiler": "2.0.0-rc.1",
+    "@angular/core": "2.0.0-rc.1",
+    "@angular/http": "2.0.0-rc.1",
+    "@angular/platform-browser": "2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.1",
+    "@angular/router": "2.0.0-rc.1",
+    "@angular/router-deprecated": "2.0.0-rc.1",
+    "es6-shim": "^0.35.0",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "0.6.12",
+    "dynamodb": "0.3.6",
+    "serverless-helpers-js": "0.2.0"
+  },
+  "devDependencies": {
+    "angular2-template-loader": "^0.4.0",
+    "autoprefixer": "^6.3.6",
+    "awesome-typescript-loader": "^0.17.0-rc.6",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "copy-webpack-plugin": "^2.1.1",
+    "html-webpack-plugin": "^2.15.0",
+    "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.2",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jongear/serverless-angular-demo/issues"
+  },
+  "homepage": "https://github.com/jongear/serverless-angular-demo#readme",
+  "_npmOperationalInternal": {
+    "host": "packages-13-west.internal.npmjs.com",
+    "tmp": "tmp/serverless-starter-0.2.1.tgz_1458892667270_0.7738919164985418"
+  }
+}
