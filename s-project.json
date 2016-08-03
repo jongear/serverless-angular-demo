@@ -1,6 +1,7 @@
 {
   "name": "serverless-angular-demo",
   "custom": {
+    "optimize": true,
     "client": {
       "bucketName": "serverless-angular-demo.${stage}.${region}"
     }
