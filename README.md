@@ -20,10 +20,12 @@ sls project init
 ```
 
 ## Configure
-1. Create Dynamo Table
+1. Update s-project.json
+    - Update bucketName under custom/client to the S3 bucket you would like your Angular application to be saved in.
+2. Create Dynamo Table
     - Create a table named heroes
     - Hash key 'id' of type string
-4. Add dynamo role policy to your [existing IAM role](https://console.aws.amazon.com/iam/home?region=us-east-1#roles)
+3. Add dynamo role policy to your [existing IAM role](https://console.aws.amazon.com/iam/home?region=us-east-1#roles)
     - ![Add dynamo access rights](https://raw.github.com/jongear/serverless-angular-demo/master/README-content/dynamo-iam-role-policy.PNG "Add dynamo access rights")
 
 
