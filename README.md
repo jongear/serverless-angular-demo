@@ -24,6 +24,17 @@ npm install
 3. 
 
 ## Run
+
+To run the Angular application in dev mode
+```
+npm start
+```
+
+To use webpack to compile the Angular application down into distribution ready code found in client/dist
+```
+npm run build
+```
+
 Deploy your functions and endpoints:
 ```
 serverless dash deploy
