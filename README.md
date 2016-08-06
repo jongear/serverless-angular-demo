@@ -21,7 +21,12 @@ npm install
 	- Copy the contents of _meta-template into it
 	- Update the IAM Role in _meta/variables/s-variables-dev-useast1.json to your IAM Role
 2. Create a admin.env file at the root of the project and copy the contents of admin.env-template into it
-3. 
+3. Create Dynamo Table
+    - Create a table named Heroes
+    - Hash key 'id' of type string
+4. Add dynamo role policy to your existing IAM role
+    - ![Add dynamo access rights](https://github.com/jongear/serverless-angular-demo/README-content/dynamo-iam-role-policy.png "Add dynamo access rights")
+
 
 ## Run
 
