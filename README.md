@@ -48,5 +48,5 @@ sls client deploy
 
 Deploy your functions and endpoints:
 ```
-serverless dash deploy
+sls dash deploy
 ```
