@@ -10,18 +10,17 @@ Make sure you have the [Serverless Framework](http://www.serverless.com) install
 ```
 npm install serverless -g
 ```
-
 Install project dependencies via npm:
 ```
 npm install
 ```
+Setup project
+```
+sls project init
+```
 
 ## Configure
-1. Create a new folder named _meta at the root of the project
-	- Copy the contents of _meta-template into it
-	- Update the IAM Role in _meta/variables/s-variables-dev-useast1.json to your IAM Role
-2. Create a admin.env file at the root of the project and copy the contents of admin.env-template into it
-3. Create Dynamo Table
+1. Create Dynamo Table
     - Create a table named heroes
     - Hash key 'id' of type string
 4. Add dynamo role policy to your [existing IAM role](https://console.aws.amazon.com/iam/home?region=us-east-1#roles)
