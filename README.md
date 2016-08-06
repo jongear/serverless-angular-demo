@@ -17,7 +17,9 @@ npm install
 ```
 
 ## Configure
-1. Create a _meta folder in the root of the project and copy the contents of _meta-template into it
+1. Create a new folder named _meta at the root of the project
+	- Copy the contents of _meta-template into it
+	- Update the IAM Role in _meta/variables/s-variables-dev-useast1.json to your IAM Role
 2. Create a admin.env file at the root of the project and copy the contents of admin.env-template into it
 3. 
 
