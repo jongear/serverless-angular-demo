@@ -1,0 +1,6 @@
+{
+  "region": "us-east-1",
+  "resourcesStackName": "serverless-angular-demo-dev-r",
+  "iamRoleArnLambda": "arn:aws:iam::XXXXXXXXXXXX:role/serverless-angular-demo-dev-r-IamRoleLambda-XXXXXXXXXXXXX",
+  "apiGatewayApi": "serverless-angular-demo"
+}
