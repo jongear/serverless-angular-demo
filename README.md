@@ -41,6 +41,11 @@ To use webpack to compile the Angular application down into distribution ready c
 npm run build
 ```
 
+To use the serverless-client-s3 plugin to push your Angular application into the desired S3 bucket
+```
+sls client deploy
+```
+
 Deploy your functions and endpoints:
 ```
 serverless dash deploy
