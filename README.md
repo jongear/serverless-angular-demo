@@ -25,7 +25,7 @@ npm install
     - Create a table named Heroes
     - Hash key 'id' of type string
 4. Add dynamo role policy to your existing IAM role
-    - ![Add dynamo access rights](https://github.com/jongear/serverless-angular-demo/README-content/dynamo-iam-role-policy.png "Add dynamo access rights")
+    - ![Add dynamo access rights](/README-content/dynamo-iam-role-policy.png "Add dynamo access rights")
 
 
 ## Run
